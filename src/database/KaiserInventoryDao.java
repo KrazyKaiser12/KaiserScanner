@@ -56,7 +56,7 @@ public KaiserInventoryDto updateSingleStoreItem(String barcode, float price, Kai
 			
 			System.out.println("Update complete");
 			
-			}catch (SQLException e) {
+			}catch (SQLException e){
 		}
 			return KaiserInventoryDao;
 	}
