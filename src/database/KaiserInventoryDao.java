@@ -36,8 +36,7 @@ public void insertSingleStoreItem(KaiserInventoryDto kaiserInventoryDto, String 
 			
 		int insert = itd.executeUpdate("INSERT into inventory(id,barcode,prices )WHERE barcode = " + barcode);
 		
-		}catch (SQLException e) {
-			
+		}catch (SQLException e) {		
 	}
 }
 public KaiserInventoryDto updateSingleStoreItem(String barcode, float price, KaiserInventoryDto KaiserInventoryDao) throws SQLException  { 
