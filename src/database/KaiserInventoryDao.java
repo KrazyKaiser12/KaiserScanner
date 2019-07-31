@@ -41,22 +41,22 @@ public void insertSingleStoreItem(KaiserInventoryDto kaiserInventoryDto, String 
 }
 public KaiserInventoryDto updateSingleStoreItem(String barcode, float price, KaiserInventoryDto KaiserInventoryDao) throws SQLException  { 
 	try {
-			Statement updat;
+		Statement updat;
 
-			updat = conn.createStatement();
+		updat = conn.createStatement();
 			
-			String updateQeuery = "update inventory " 
+		String updateQeuery = "update inventory " 
 					
-			+ "set prices = 'prices ' "
+		+ "set prices = 'prices ' "
 			
-			+"" + "WHERE barcode= " + barcode;
+		+"" + "WHERE barcode= " + barcode;
 			
-			updat.executeUpdate("updateQuery");
+		updat.executeUpdate("updateQuery");
+		
+		System.out.println("Update complete");
 			
-			System.out.println("Update complete");
-			
-			}catch (SQLException e){
+		}catch (SQLException e){
 		}
-			return KaiserInventoryDao;
+		return KaiserInventoryDao;
 	}
 }
